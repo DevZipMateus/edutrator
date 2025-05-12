@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -27,7 +28,7 @@ const Contact = () => {
           <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in">
             <div className="bg-emerald-500 p-6 flex items-center justify-center">
               <img 
-                src="/lovable-uploads/1fa16bc1-908d-4a63-9c7f-88a25f117f80.png" 
+                src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" 
                 alt="WhatsApp" 
                 className="w-16 h-16"
               />
@@ -35,14 +36,24 @@ const Contact = () => {
             <div className="p-6 text-center">
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">WhatsApp</h3>
               <p className="text-neutral-600 mb-4">Atendimento rápido e prático</p>
-              <a 
-                href="https://wa.me/5511987654321" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
-              >
-                <span>Enviar mensagem</span>
-              </a>
+              <div className="space-y-2">
+                <a 
+                  href="https://wa.me/5511945809669" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium w-full"
+                >
+                  <span>(11) 94580-9669</span>
+                </a>
+                <a 
+                  href="https://wa.me/5511985980873" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium w-full"
+                >
+                  <span>(11) 98598-0873</span>
+                </a>
+              </div>
             </div>
           </div>
           
@@ -55,10 +66,10 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">Telefone</h3>
               <p className="text-neutral-600 mb-4">Fale diretamente conosco</p>
               <a 
-                href="tel:+5511987654321"
+                href="tel:+551120284396"
                 className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
               >
-                <span>(11) 98765-4321</span>
+                <span>(11) 2028-4396</span>
               </a>
             </div>
           </div>
@@ -72,10 +83,10 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">E-mail</h3>
               <p className="text-neutral-600 mb-4">Envie sua mensagem</p>
               <a 
-                href="mailto:contato@contabilidade.com"
+                href="mailto:Eduflana@hotmail.com"
                 className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
               >
-                <span>contato@contabilidade.com</span>
+                <span>Eduflana@hotmail.com</span>
               </a>
             </div>
           </div>
@@ -91,7 +102,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-neutral-900 mb-2">Endereço</h4>
-                <p className="text-neutral-600">Av. Paulista, 1000 - Bela Vista, São Paulo - SP, 01310-100</p>
+                <p className="text-neutral-600">Rua Padre Carlos da Silva, 151 - Alto da Mooca<br />São Paulo-SP, CEP 03128-160</p>
               </div>
             </div>
             

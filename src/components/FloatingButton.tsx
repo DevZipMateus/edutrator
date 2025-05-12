@@ -28,23 +28,32 @@ const FloatingButton = () => {
       {/* Contact Options */}
       <div className={`flex flex-col-reverse items-end mb-3 space-y-reverse space-y-2 transition-all duration-500 ${isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
         <a 
-          href="https://wa.me/5511987654321" 
+          href="https://wa.me/5511945809669" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center bg-black text-amber-400 px-4 py-2 rounded-md shadow-lg hover:bg-neutral-800 transition-all duration-300 gap-2 font-medium"
         >
-          <span className="mr-1">WhatsApp</span>
+          <span className="mr-1">WhatsApp 1</span>
         </a>
         
         <a 
-          href="tel:+5511987654321" 
+          href="https://wa.me/5511985980873" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex items-center bg-black text-amber-400 px-4 py-2 rounded-md shadow-lg hover:bg-neutral-800 transition-all duration-300 gap-2 font-medium"
+        >
+          <span className="mr-1">WhatsApp 2</span>
+        </a>
+        
+        <a 
+          href="tel:+551120284396" 
           className="flex items-center bg-black text-amber-400 px-4 py-2 rounded-md shadow-lg hover:bg-neutral-800 transition-all duration-300 gap-2 font-medium"
         >
           <span className="mr-1">Ligar</span>
         </a>
         
         <a 
-          href="mailto:contato@contabilidade.com" 
+          href="mailto:Eduflana@hotmail.com" 
           className="flex items-center bg-black text-amber-400 px-4 py-2 rounded-md shadow-lg hover:bg-neutral-800 transition-all duration-300 gap-2 font-medium"
         >
           <span className="mr-1">E-mail</span>
