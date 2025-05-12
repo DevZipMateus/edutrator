@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import Services from '../components/Services';
 import AboutUs from '../components/AboutUs';
 import Contact from '../components/Contact';
+import Products from '../components/Products';
 import FloatingButton from '../components/FloatingButton';
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
       <main className="flex-grow">
         <Hero />
         <Services />
+        <Products />
         <AboutUs />
         <Contact />
       </main>
