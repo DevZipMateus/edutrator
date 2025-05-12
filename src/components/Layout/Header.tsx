@@ -1,14 +1,11 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, Facebook, Instagram, Twitter, Linkedin, Menu, X } from 'lucide-react';
 import { useIsMobile } from '../../hooks/use-mobile';
-
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -17,19 +14,15 @@ const Header = () => {
         setIsScrolled(false);
       }
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
-  return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-white py-4'}`}>
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-white py-4'}`}>
       {/* Top Bar with Contact Info and Social Media */}
       <div className="container-custom">
         <div className="flex flex-col md:flex-row md:justify-between items-center mb-4 md:mb-2">
@@ -66,11 +59,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="transition-all duration-300 transform hover:scale-[1.02]">
-            <img 
-              src="/lovable-uploads/6cb201c9-3397-4326-98b1-d206e6af655e.png" 
-              alt="Edu Trator" 
-              className="h-12 w-auto"
-            />
+            <img src="/lovable-uploads/6cb201c9-3397-4326-98b1-d206e6af655e.png" alt="Edu Trator" className="h-24 w-auto" />
           </Link>
           
           {/* Desktop Navigation */}
@@ -82,10 +71,7 @@ const Header = () => {
           </nav>
           
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-gray-600 hover:text-amber-500 focus:outline-none"
-            onClick={toggleMobileMenu}
-          >
+          <button className="md:hidden text-gray-600 hover:text-amber-500 focus:outline-none" onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -100,8 +86,6 @@ const Header = () => {
           <a href="#contact" className="px-4 py-2 text-gray-700 hover:text-amber-500 hover:bg-gray-50 rounded-md" onClick={toggleMobileMenu}>Contato</a>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
