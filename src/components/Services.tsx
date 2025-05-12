@@ -39,7 +39,7 @@ const Services = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-amber-100 text-amber-600 font-medium px-4 py-1.5 rounded-full text-sm mb-4">
+          <div className="inline-block bg-orange-100 text-orange-600 font-medium px-4 py-1.5 rounded-full text-sm mb-4">
             Nossos Serviços
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -59,8 +59,8 @@ const Services = () => {
               className="bg-white rounded-lg p-8 border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all duration-300 transform hover:scale-[1.02] animate-fade-in"
               style={{ animationDelay: service.delay }}
             >
-              <div className="bg-amber-100 p-4 rounded-lg inline-block mb-5">
-                <service.icon className="text-amber-600" size={28} />
+              <div className="bg-orange-100 p-4 rounded-lg inline-block mb-5">
+                <service.icon className="text-orange-600" size={28} />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
@@ -72,7 +72,7 @@ const Services = () => {
         <div className="mt-16 text-center">
           <a 
             href="#contact" 
-            className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium inline-flex"
+            className="bg-black hover:bg-neutral-800 text-orange-400 px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium inline-flex"
           >
             <span>Fale com um especialista</span>
             <ArrowRight size={18} />
