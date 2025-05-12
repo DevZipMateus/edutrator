@@ -1,11 +1,14 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, Facebook, Instagram, Twitter, Linkedin, Menu, X } from 'lucide-react';
+import { Mail, Phone, Menu, X } from 'lucide-react';
 import { useIsMobile } from '../../hooks/use-mobile';
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -19,18 +22,20 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-white py-4'}`}>
-      {/* Top Bar with Contact Info and Social Media */}
+      {/* Top Bar with Contact Info */}
       <div className="container-custom">
         <div className="flex flex-col md:flex-row md:justify-between items-center mb-4 md:mb-2">
           {/* Contact Information */}
           <div className="flex flex-col md:flex-row md:space-x-6 text-sm text-gray-600 mb-2 md:mb-0 items-center">
-            <a href="mailto:contato@contabilidade.com" className="flex items-center hover:text-amber-500 transition-colors duration-300 mb-1 md:mb-0">
+            <a href="mailto:Eduflana@hotmail.com" className="flex items-center hover:text-amber-500 transition-colors duration-300 mb-1 md:mb-0">
               <Mail size={16} className="mr-2" />
-              contato@contabilidade.com
+              Eduflana@hotmail.com
             </a>
             <a href="tel:+5511987654321" className="flex items-center hover:text-amber-500 transition-colors duration-300 whitespace-nowrap">
               <Phone size={16} className="mr-2" />
@@ -38,21 +43,7 @@ const Header = () => {
             </a>
           </div>
           
-          {/* Social Media Icons */}
-          <div className="flex space-x-4">
-            <a href="#" className="text-gray-500 hover:text-amber-500 transition-colors duration-300">
-              <Facebook size={18} />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-amber-500 transition-colors duration-300">
-              <Instagram size={18} />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-amber-500 transition-colors duration-300">
-              <Twitter size={18} />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-amber-500 transition-colors duration-300">
-              <Linkedin size={18} />
-            </a>
-          </div>
+          {/* Removed social media icons section */}
         </div>
         
         {/* Main Navigation */}
@@ -88,4 +79,5 @@ const Header = () => {
       </div>
     </header>;
 };
+
 export default Header;
