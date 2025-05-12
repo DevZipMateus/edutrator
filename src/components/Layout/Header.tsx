@@ -65,8 +65,12 @@ const Header = () => {
         {/* Main Navigation */}
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-semibold text-amber-500 transition-all duration-300 transform hover:scale-[1.02]">
-            ContaPlus
+          <Link to="/" className="transition-all duration-300 transform hover:scale-[1.02]">
+            <img 
+              src="/lovable-uploads/6cb201c9-3397-4326-98b1-d206e6af655e.png" 
+              alt="Edu Trator" 
+              className="h-12 w-auto"
+            />
           </Link>
           
           {/* Desktop Navigation */}
