@@ -13,15 +13,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone className="mr-3 mt-1 flex-shrink-0" size={18} />
-                <span>(11) 98765-4321</span>
+                <span>(11) 2028-4396 / (11) 98598-0873 / (11) 94580-9669</span>
               </li>
               <li className="flex items-start">
                 <Mail className="mr-3 mt-1 flex-shrink-0" size={18} />
-                <span>contato@contabilidade.com</span>
+                <span>Eduflana@hotmail.com</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 flex-shrink-0" size={18} />
-                <span>Av. Paulista, 1000 - Bela Vista, São Paulo - SP, 01310-100</span>
+                <span>Rua Padre Carlos da Silva, 151 - Alto da Mooca, São Paulo - SP, 03128-160</span>
               </li>
             </ul>
           </div>
@@ -45,29 +45,29 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Social Media */}
+          {/* Business Hours */}
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <h3 className="text-xl font-semibold mb-6">Redes Sociais</h3>
-            <div className="flex space-x-4 mb-6">
-              <a href="#" className="bg-white/10 hover:bg-amber-400/80 hover:text-black transition-colors duration-300 p-2 rounded-full">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="bg-white/10 hover:bg-amber-400/80 hover:text-black transition-colors duration-300 p-2 rounded-full">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="bg-white/10 hover:bg-amber-400/80 hover:text-black transition-colors duration-300 p-2 rounded-full">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="bg-white/10 hover:bg-amber-400/80 hover:text-black transition-colors duration-300 p-2 rounded-full">
-                <Linkedin size={20} />
-              </a>
+            <h3 className="text-xl font-semibold mb-6">Horário de Funcionamento</h3>
+            <div className="space-y-2">
+              <div className="flex justify-between">
+                <span className="text-gray-400">Segunda - Sexta:</span>
+                <span className="font-medium">08:00 - 18:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-400">Sábado:</span>
+                <span className="font-medium">09:00 - 13:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-400">Domingo:</span>
+                <span className="font-medium">Fechado</span>
+              </div>
             </div>
           </div>
         </div>
         
         {/* Copyright */}
         <div className="border-t border-white/10 mt-10 pt-6 text-center text-sm text-white/70">
-          <p>© {new Date().getFullYear()} ContaPlus. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Edu Trator. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
