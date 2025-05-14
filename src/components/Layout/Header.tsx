@@ -37,13 +37,17 @@ const Header = () => {
               <Mail size={16} className="mr-2" />
               Eduflana@hotmail.com
             </a>
-            <a href="tel:+5511987654321" className="flex items-center hover:text-amber-500 transition-colors duration-300 whitespace-nowrap">
-              <Phone size={16} className="mr-2" />
-              (11) 98765-4321
-            </a>
+            <div className="flex flex-col md:flex-row md:space-x-4">
+              <a href="https://wa.me/5511985980873" className="flex items-center hover:text-amber-500 transition-colors duration-300 whitespace-nowrap mb-1 md:mb-0">
+                <Phone size={16} className="mr-2" />
+                (11) 98598-0873
+              </a>
+              <a href="https://wa.me/5511945809669" className="flex items-center hover:text-amber-500 transition-colors duration-300 whitespace-nowrap">
+                <Phone size={16} className="mr-2" />
+                (11) 94580-9669
+              </a>
+            </div>
           </div>
-          
-          {/* Removed social media icons section */}
         </div>
         
         {/* Main Navigation */}
