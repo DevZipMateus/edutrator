@@ -13,8 +13,8 @@ import { useIsMobile } from '../hooks/use-mobile';
 const products = [
   {
     id: 1,
-    title: "Bomba Hidráulica",
-    description: "Bomba hidráulica de alta performance para tratores Caterpillar. Componente restaurado com peças originais, garantindo pressão e vazão adequadas para operações intensivas.",
+    title: "Controle de Direção",
+    description: " controle de direção é um mecanismo que permite ao motorista direcionar o veículo, sendo essencial para a navegação segura nas estradas e manobras.",
     image: "/lovable-uploads/b9d5bb09-af5f-48a4-8516-2bcb7667eb41.png"
   },
   {
