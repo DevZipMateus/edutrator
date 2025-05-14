@@ -14,7 +14,7 @@ const products = [
   {
     id: 1,
     title: "Controle de Direção",
-    description: " controle de direção é um mecanismo que permite ao motorista direcionar o veículo, sendo essencial para a navegação segura nas estradas e manobras.",
+    description: "Controle de direção Proporcionam a mudança de direção de tratores de esteira e outros equipamentos com rapidez e eficiência.",
     image: "/lovable-uploads/b9d5bb09-af5f-48a4-8516-2bcb7667eb41.png"
   },
   {
