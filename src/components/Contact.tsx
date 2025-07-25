@@ -83,10 +83,10 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">E-mail</h3>
               <p className="text-neutral-600 mb-4">Envie sua mensagem</p>
               <a 
-                href="mailto:Eduflana@hotmail.com"
+                href="mailto:Eduflana52@gmail.com"
                 className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
               >
-                <span>Eduflana@hotmail.com</span>
+                <span>Eduflana52@gmail.com</span>
               </a>
             </div>
           </div>

@@ -33,9 +33,9 @@ const Header = () => {
         <div className="flex flex-col md:flex-row md:justify-between items-center mb-4 md:mb-2">
           {/* Contact Information */}
           <div className="flex flex-col md:flex-row md:space-x-6 text-sm text-gray-600 mb-2 md:mb-0 items-center">
-            <a href="mailto:Eduflana@hotmail.com" className="flex items-center hover:text-amber-500 transition-colors duration-300 mb-1 md:mb-0">
+            <a href="mailto:Eduflana52@gmail.com" className="flex items-center hover:text-amber-500 transition-colors duration-300 mb-1 md:mb-0">
               <Mail size={16} className="mr-2" />
-              Eduflana@hotmail.com
+              Eduflana52@gmail.com
             </a>
             <div className="flex flex-col md:flex-row md:space-x-4">
               <a href="https://wa.me/5511985980873" className="flex items-center hover:text-amber-500 transition-colors duration-300 whitespace-nowrap mb-1 md:mb-0">
